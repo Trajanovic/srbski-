@@ -40,10 +40,7 @@ class App extends React.Component {
            });
 
     }*/
-
-
     render() {
-
         return (
             <div>
                 <button onClick = {this.setStateHandler} data-toggle="modal" data-target="#modal">SET STATE</button>
@@ -51,7 +48,6 @@ class App extends React.Component {
                 <button onClick = {this.Stanje} data-toggle="modal" data-target="#modal">SET STATE3</button>
                 <MM telo={this.state.telo} naslov={this.state.naslov} slika={this.state.slika}
                 className={this.state.className}  />
-
             </div>
         );
     }
@@ -74,7 +70,6 @@ class Modal extends Component{
             className: this.props.className,
         };
     }
-
     render(){
           return(
             <div className="modal" id="modal" role="dialog">
